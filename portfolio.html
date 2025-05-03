@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>portfolio</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="styles/styles.css">
+    </head>
+    <body>
+        <div class="header">
+            <div class="mb-container">
+                <img src="images/mblab-logo.png" alt="Logo">
+                <h1> MB-lab</h1>
+            </div>
+            <div class="nav-container">
+                <a href="index.html">home</a>                
+                <a href="portfolio.html">portfolio</a>
+                <a href="about.html">about</a>
+            </div>
+            <div class="img-container-right">
+                <img src="images/pcb-board.png" alt="PCB">
+                <img src="images/3d-printer.png" alt="3d-printer">
+                <img src="images/server.png" alt="server">
+            </div>
+        </div>
+        <div class="row">
+            <div class="sidenav">
+                <h1>portfolio</h1>
+                <h2>projects</h2>
+                <p><a href="#Lab-Sens">Lab-Sens</a></p>
+                <p><a href="#Laser Driver">Laser Driver</a></p>
+                <p><a href="#Laser Controllers">Laser Controllers</a> </p>
+                <p><a href="#CO2 sensor">CO2 sensor</a></p>
+                <p><a href="#High-power led">high-power led</a></p>
+                <br>
+                <h2>MB-lab</h2>
+                <p><a href="#Proxmox">Proxmox</a></p>
+                <p><a href="#3D-printer">3D-printers</a></p>
+            </div>
+            <div class="article">
+                <br>
+                <h1>Internship Absolem</h1>
+                <br>
+                <h2>Absolem</h2>
+                <br>
+                <p>As part of my associate degree in Internet of Things, I completed a 4-month internship at Absolem,</p>
+                <p>a company specialized in laser technology.</p>
+                <p>There, I contributed to various projects and learned a great deal about many different areas of the industry.</p>
+                <br>
+                <div id="Lab-Sens">
+                    <h2>Lab-Sens</h2>
+                    <br>
+                    <h3>Tasks performed:</h3>
+                    <p>Writing Python code.</p>
+                    <p>Designing PCBs for SBC (single board computer) and ADC(analog digital converter).</p>
+                    <p>Installing hardware.</p>
+                    <p>Setting up Docker containers for the Python script,</p>
+                    <p>Influx database, and Grafana visualization.</p>
+                    <br>
+                    <h3>Project:</h3>
+                    <p>For my first assignment, I demonstrated the possibilities of the Internet of Things (IoT) in the laser lab.</p>
+                    <p>Several laser setups in the lab generate a lot of heat. This heat is regulated using a water cooler.</p>
+                    <p>If the temperature becomes too high, the lasers automatically shut down to prevent overheating.</p>
+                    <p>This slows down the work of colleagues, who then need to wait for the system to cool down.</p>
+                    <p>The Lab-Sens project collects data from the machines, allowing us to identify which setups are overheating the cooling system,</p>
+                    <p>and eventually how factors like temperature, humidity, and vibrations affect test results.</p>
+                    <p>This project shows how IoT can solve practical problems, improve workflow, and increase lab efficiency.</p>
+                    <br>
+                    <br>
+                </div>
+                <!-- Slideshow container -->
+                <div class="slideshow-container">
+                    <img class="Slide-Lab-sens" src="./images/proj-proto.JPG" style="width:100%">
+                    <img class="Slide-Lab-sens" src="./images/proj-pcb.JPG" style="width:100%">
+                    <img class="Slide-Lab-sens" src="./images/project.JPG" style="width:100%">
+                    <a class="prev" onclick="plusSlides(-1, 0)">&#10094;</a>
+                    <a class="next" onclick="plusSlides(1, 0)">&#10095;</a>
+                </div>
+                <br>
+                <br>
+                <div id="Laser Driver">
+                    <h2>Laser Driver</h2>
+                    <br>
+                    <h3>Tasks performed:</h3>
+                    <p>Developing modular software.</p>
+                    <p>Learning (ST) structured language programming.</p>
+                    <p>PLC programming.</p>
+                    <br>
+                    <h3>Project:</h3>
+                    <p>For a project for chip manufacturer ASML, we used an industrial computer to control an entire setup,</p>
+                    <p>consisting of various modules such as the laser, several safety switches, and the cooler.</p>
+                    <p>My task was to help develop the software for the laser component of this phase.</p>
+                    <p>This meant I had to learn a new programming language,</p>
+                    <p>and use a standard software template that Absolem applies to machine programming.</p>
+                    <p>I also contributed to the design of a modular structure, making it easier to program and deploy future lasers,</p>
+                    <p>and enabling the machine to be reused across different setups.</p>
+                    <p>By making the laser module easy to replace or swap,</p>
+                    <p>the design of new systems and machines becomes much more flexible and efficient.</p>
+                    <br>
+                </div>
+                <div class="slideshow-container">
+                    <img class="Slide-Laser driver" src="./images/rofin.JPG" style="width:100%">
+                    <img class="Slide-Laser driver" src="./images/PLC.JPG" style="width:100%">
+                    <a class="prev" onclick="plusSlides(-1, 1)">&#10094;</a>
+                    <a class="next" onclick="plusSlides(1, 1)">&#10095;</a>
+                </div>
+                <br>
+                <br>
+                <div id="Laser Controllers">
+                    <h2>Laser Controllers</h2>
+                    <br>
+                    <h3>Tasks performed:</h3>
+                    <p>Reading and working with electrical schematics.</p>
+                    <p>Connecting electrical equipment.</p>
+                    <p>Laying and connecting cables.</p>
+                    <p>Custom-making certain mounts.</p>
+                    <br>
+                    <h3>Project:</h3>
+                    <p>At Absolem, I helped replace a laser that had reached the end of its life cycle.</p>
+                    <p>This laser was used to produce test capsules for leak detection in the pharmaceutical industry,</p>
+                    <p>but broke down before the replacement was ready.</p>
+                    <p>Since the customer expected several capsules each week, development of the new laser had to speed up quickly.</p>
+                    <p>I was asked to assemble the new laser controller,</p>
+                    <p>which was built into a 19-inch rack cabinet that provided power and control for the laser.</p>
+                    <p>After this, I performed a similar task for another experimental setup.</p>
+                    <p>The controllers were assembled using schematics drawn by colleagues,</p>
+                    <p>which allowed us to discuss and apply changes to simplify the assembly process.</p>
+                    <br>
+                    <br>
+                </div>
+                <div class="slideshow-container">
+                    <img class="Slide-Laser Controllers" src="./images/kast-s.JPG" style="width:100%">
+                    <img class="Slide-Laser Controllers" src="./images/kast-r.JPG" style="width:100%">
+                    <a class="prev" onclick="plusSlides(-1, 2)">&#10094;</a>
+                    <a class="next" onclick="plusSlides(1, 2)">&#10095;</a>
+                </div>
+                <br>
+                <br>
+                <div id="CO2 sensor">
+                    <h2>CO2 Sensor</h2>
+                    <br>
+                    <h3>Tasks performed:</h3>
+                    <p>Researching components.</p>
+                    <p>Drawing electrical schematics.</p>
+                    <p>Building a prototype on a breadboard.</p>
+                    <p>Designing mounts.</p>
+                    <p>Calibrating the sensor.</p>
+                    <br>
+                    <h3>Project:</h3>
+                    <p>At Absolem, we’re working on a system to extend the shelf life of medication by storing it in a controlled atmosphere of nitrogen and CO2.</p>
+                    <p>The setup first creates a vacuum, then fills it with the precise gas mixture.</p>
+                    <p>Since the shelf life heavily depends on this ratio,</p>
+                    <p>it’s crucial to accurately measure the nitrogen/CO2 mix while filling the vacuum.</p>
+                    <p>My job was to select a CO2 sensor that could measure the ratio as early as possible in the process.</p>
+                    <p>The chosen sensor can start measuring from 0.5 bar.</p>
+                    <p>After ordering the sensor and preparing the necessary hardware to process and read the signal,</p>
+                    <p>the project was temporarily paused so I could work on the laser controllers.</p>
+                    <p>We can now perform measurements, amplify the signal with an op-amp, and read it via an AD converter.</p>
+                    <p>What still needs to be done is correctly interpreting the signal using a multiplier factor and calculating this value.</p>
+                    <br>
+                    <br>
+                </div>
+                <div class="slideshow-container">
+                    <img class="Slide-CO2 sensor" src="./images/co2-proto.JPG" style="width:100%">
+                    <img class="Slide-CO2 sensor" src="./images/co2-sensor.JPG" style="width:100%">
+                    <a class="prev" onclick="plusSlides(-1, 3)">&#10094;</a>
+                    <a class="next" onclick="plusSlides(1, 3)">&#10095;</a>
+                </div>
+                <div id="High-power led">
+                    <h2>High-power led</h2>
+                    <br>
+                    <h3>Tasks performed:</h3>
+                    <p>Researching components.</p>
+                    <p>Drawing electrical schematics.</p>
+                    <p>Designing a PCB.</p>
+                    <br>
+                    <h3>Project:</h3>
+                    <p>Another assignment I took on was designing a LED driver for leak detection.</p>
+                    <p>The driver was meant to shine high-power LEDs through pipes,</p>
+                    <p>allowing a special camera to detect light on the outside.</p>
+                    <p>For this, I designed a custom PCB to power the SMD LED.</p>
+                    <p>I completed the final design with help from a colleague. Because the high-power LED generates a lot of heat,</p>
+                    <p>I opted for an aluminum PCB for better heat dissipation.</p>
+                    <p>Unfortunately, due to a supplier error, a plastic-finished PCB was delivered instead,</p>
+                    <p>causing significant delays and making it unusable for this project.</p>
+                    <p>Luckily, the schematics weren’t lost.</p>
+                    <p>SMD LEDs are becoming more common in projects, and the designs can easily be adapted for other LEDs and setups.</p>
+                    <br>
+                    <br>
+                </div>
+                <div class="slideshow-container">
+                    <img class="Slide-led" src="./images/pcb-led.JPG" style="width:100%">
+                </div>
+                <br>
+                <div id="MB-lab">
+                    <h1>MB-lab</h1>
+                    <br>
+                    <h2>In-house Lab</h2>
+                    <p>Driven by my personal interest in IT, I’ve set up a small home lab, fittingly named MB-lab.</p>
+                    <p>Here I experiment in my free time with various coding languages, services, operating systems, etc.</p>
+                    <p>All with the goal of applying them in a professional context later on.</p>
+                    <br>
+                </div>
+                <div id="Proxmox">
+                    <h2>Proxmox</h2>
+                    <p>To keep my own services running 24/7, I use a laptop running Proxmox,</p>
+                    <p>an operating system for managing virtual machines and Linux containers.</p>
+                    <p>One container runs a VPN, and a virtual machine hosts this webpage.</p>
+                    <br>
+                    <p>There’s also a virtual machine running OpenMediaVault,</p>
+                    <p>which acts as a personal NAS system, making files easily accessible from multiple devices.</p>
+                    <p>I also use it to back up important folders, drives, and systems.</p>
+                    <br>
+                </div>
+                <div id="3D-printer">
+                    <h2>3D Printers</h2>
+                    <p>My lab includes two 3D printers.</p>
+                    <p>A Velleman K8200 — though after some personal modifications, only the frame remains original.</p>
+                    <p>As it started hitting its limits, I upgraded to a more advanced CR-5 Pro H.</p>
+                    <p>Once again, only the frame remains unchanged — the rest has been adapted to fit better hotends and extruders.</p>
+                    <p>The motherboards have been optimized to make it easier to configure these upgrades and fine-tune the printer.</p>
+                </div>
+            </div>
+        </div>
+        <script src="scripts/front.js"></script>
+        <script src="scripts/image.js"></script>
+    </body>
+</html>

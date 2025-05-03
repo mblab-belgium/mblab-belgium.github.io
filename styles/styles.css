@@ -16,17 +16,19 @@ body {
   width: 100%;
 }
 /*container for logo*/
-.mb-contrainer{
-  align-items: center;
+.mb-container{
+
   display: flex;
+  flex-direction: row;
   position: absolute;
   color: rgb(17, 17, 17);
   font: lighter; 
 }
-.image-container-logo{
-  width: 100px;
+.mb-container img{
+  margin-top: -10px;
+  width: 90px;
   background-color: transparent;
-  margin-right: 10px;
+  margin-right: 25px;
 }
 /*container for upper navigation*/
 .nav-container{
@@ -72,8 +74,15 @@ body {
   text-underline-offset: 4px;
   font-size:large;
 }
-.sidenav h1, .sidenav h2{
+.sidenav h1{
+  font-size: 45px;
   padding: 5px;
+  text-decoration: underline; 
+  color: #B85042;
+}
+.sidenav h2{
+  padding: 5px;
+  color: #B85042;
 }
 .sidenav p{
   margin-left: 10px;
@@ -98,8 +107,8 @@ body {
   background-color: #E7E8D1;
   font-size:larger;
   padding-bottom: 60px;
-  
 }
+
 /* Slideshow container */
 .slideshow-container {
   max-width: 500px;
