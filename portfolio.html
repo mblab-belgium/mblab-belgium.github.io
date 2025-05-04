@@ -28,23 +28,27 @@
         <div class="row">
             <div class="sidenav">
                 <h1>portfolio</h1>
-                <h2>projects</h2>
+                <h2>Internships</h2>
+                <h3>Absolem</h3>
                 <p><a href="#Lab-Sens">Lab-Sens</a></p>
                 <p><a href="#Laser Driver">Laser Driver</a></p>
                 <p><a href="#Laser Controllers">Laser Controllers</a> </p>
                 <p><a href="#CO2 sensor">CO2 sensor</a></p>
                 <p><a href="#High-power led">high-power led</a></p>
-                <br>
+                <h2>School projects</h2>
+                <p><a href="#Hosting system">Hosting system</a></p>
+                <p><a href="#Voting system">Voting system</a></p>
                 <h2>MB-lab</h2>
                 <p><a href="#Proxmox">Proxmox</a></p>
                 <p><a href="#3D-printer">3D-printers</a></p>
+                <br>
             </div>
             <div class="article">
+                <br>
                 <br>
                 <h1>Internship Absolem</h1>
                 <br>
                 <h2>Absolem</h2>
-                <br>
                 <p>As part of my associate degree in Internet of Things, I completed a 4-month internship at Absolem,</p>
                 <p>a company specialized in laser technology.</p>
                 <p>There, I contributed to various projects and learned a great deal about many different areas of the industry.</p>
@@ -188,40 +192,80 @@
                     <p>Luckily, the schematics weren’t lost.</p>
                     <p>SMD LEDs are becoming more common in projects, and the designs can easily be adapted for other LEDs and setups.</p>
                     <br>
-                    <br>
                 </div>
                 <div class="slideshow-container">
                     <img class="Slide-led" src="./images/pcb-led.JPG" style="width:100%">
+                    <br><br><br>
                 </div>
+                <h1>School projects</h1>
                 <br>
+                <div id="Hosting system">
+                    <h2>Hosting system</h2>
+                    <br>
+                    <h3>Tasks performed:</h3>
+                    <p>Managing the project.</p>
+                    <p>Setting up the hosting environment.</p>
+                    <p>Automating the hosting environment.</p>
+                    <br>
+                    <h3>Project:</h3>
+                    <p>Another project I worked on during my Bachelor's was building a hosting platform.</p>
+                    <p>The goal of this platform was to automatically launch a simple web application.</p>
+                    <p>It was built on top of a Kubernetes cluster, with applications being pulled in directly from GitHub.</p>
+                    <p>My role in this project was again project management.</p>
+                    <p>But since I also like getting hands-on, I took care of a big part of the technical setup as well.</p>
+                    <p>I automated the infrastructure by linking together Terraform, Ansible, and Puppet.</p>
+                    <p>This setup made it easy to quickly spin up new VMs to handle higher loads.</p>
+                    <p>Terraform creates the VMs, Ansible handles the initial setup and installations, and then Puppet takes over for ongoing management.</p>
+                    <p>This way, the state of the VMs is guaranteed, and they’re automatically secured and monitored.</p>                    
+                    <br><br>
+                </div>
+                <div id="Voting system">
+                    <h2>Voting system</h2>
+                    <br>
+                    <h3>Tasks performed:</h3>
+                    <p>Managing the project.</p>
+                    <p>Setting up the hosting environment.</p>
+                    <p>Continuous testing.</p>
+                    <br>
+                    <h3>Project:</h3>
+                    <p>For my bachelor’s degree, I worked on a group project to build a voting system.</p>
+                    <p>The system included card readers, a voting page, an admin page, and a backend system.</p>
+                    <p>The idea was that you could open the web page from a logged-in PC, connect an RFID card reader to that computer, and easily set up the voting system—perfect for events where people receive RFID tags to vote.</p>
+                    <p>The system was designed so that all votes would still be saved even if it shut down unexpectedly, but it could also be reset easily to start a new round of voting.</p>
+                    <p>My main role was project management. I tried to keep the team moving, helped connect all the different parts together, and made sure the completed pieces were properly tested.</p>
+                    <br><br>
+                </div>
                 <div id="MB-lab">
                     <h1>MB-lab</h1>
                     <br>
                     <h2>In-house Lab</h2>
-                    <p>Driven by my personal interest in IT, I’ve set up a small home lab, fittingly named MB-lab.</p>
+                    <p>Driven by my personal interest in IT, I’ve set up a home lab, fittingly named MB-lab.</p>
                     <p>Here I experiment in my free time with various coding languages, services, operating systems, etc.</p>
-                    <p>All with the goal of applying them in a professional context later on.</p>
+                    <p>All with the goal of learnign from them and hopefully applying them in a professional context later on.</p>
                     <br>
                 </div>
                 <div id="Proxmox">
                     <h2>Proxmox</h2>
-                    <p>To keep my own services running 24/7, I use a laptop running Proxmox,</p>
-                    <p>an operating system for managing virtual machines and Linux containers.</p>
-                    <p>One container runs a VPN, and a virtual machine hosts this webpage.</p>
-                    <br>
-                    <p>There’s also a virtual machine running OpenMediaVault,</p>
-                    <p>which acts as a personal NAS system, making files easily accessible from multiple devices.</p>
-                    <p>I also use it to back up important folders, drives, and systems.</p>
-                    <br>
-                </div>
+                    <p>To keep my own services running 24/7, I’ve got a small homeserver running Proxmox,</p>
+                    <p>an OS made for managing virtual machines and Linux containers.</p>
+                    <p>On it, I run all sorts of stuff, from an OPNsense firewall to</p>
+                    <p>an automated Kubernetes cluster. Most of the VMs I run are deployed using a mix of</p>
+                    <p>Terraform, Ansible, and Puppet. This way, everything's automated and centrally managed.</p>
+                    <p>The first hardware I used was an old laptop, but I quickly ran into its limits.</p>
+                    <p>Now that laptop’s repurposed as a homemade NAS, using OpenMediaVault wich is an OS built specificly for that job.</p>
+                </div>        
+                <br>
                 <div id="3D-printer">
                     <h2>3D Printers</h2>
                     <p>My lab includes two 3D printers.</p>
                     <p>A Velleman K8200 — though after some personal modifications, only the frame remains original.</p>
                     <p>As it started hitting its limits, I upgraded to a more advanced CR-5 Pro H.</p>
-                    <p>Once again, only the frame remains unchanged — the rest has been adapted to fit better hotends and extruders.</p>
-                    <p>The motherboards have been optimized to make it easier to configure these upgrades and fine-tune the printer.</p>
+                    <p>On this printer i drilled holes so i could fit another hotend, becaus otherwie i was stuck with the stock model..</p>
+                    <p>Also the extruder is changed to a stronger model and i added a Orangepi 3 LTS on it, so i can run it with Mainsail and klipper.</p>
+                    <p>With this setup i can print faster and from my browser, instead of using the default touchscreen that is on the printer.</p>
+                    <br><br>
                 </div>
+                <br>
             </div>
         </div>
         <script src="scripts/front.js"></script>
